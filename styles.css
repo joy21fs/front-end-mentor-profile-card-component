@@ -1,0 +1,129 @@
+:root {
+  --background-color: hsl(185, 75%, 39%);
+  --sub-text: hsl(0, 0%, 59%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: var(--background-color);
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.name,
+.num {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.age,
+.city,
+.unit {
+  font-weight: 400;
+  color: var(--sub-text);
+}
+
+/*********** background section *************/
+.bg-img {
+  position: absolute;
+}
+
+.top {
+  right: 50vw;
+  bottom: 50vh;
+}
+
+.bottom {
+  left: 50vw;
+  top: 50vh;
+}
+
+.card {
+  z-index: 1;
+  background-color: #fff;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+
+/************ personal-info section ***********/
+.personal-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  width: 100%;
+  border-bottom: solid;
+  border-bottom-width: 1.5px;
+  border-bottom-color: hsl(0, 0%, 90%);
+  padding: 1rem;
+}
+
+.profile-pic {
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 100%;
+  border-style: solid;
+  border-width: 0.3rem;
+  border-color: #fff;
+}
+
+.main-info {
+  padding-top: 2rem;
+}
+
+.name,
+.age {
+  display: inline-block;
+  margin: 0.5rem 0.2rem;
+}
+
+.city {
+  margin-top: 0;
+}
+
+/************ stats section ***********/
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 2rem;
+  width: 90%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat {
+  margin: 0 auto;
+}
+
+.unit {
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  padding-top: 0.4rem;
+}
+
+/************ footer section ***********/
+.attribution {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
