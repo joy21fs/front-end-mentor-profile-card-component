@@ -2,8 +2,8 @@
 
 ### Links
 
-- Solution URL: 
-- Live Site URL: 
+- Solution URL: https://github.com/joy21fs/front-end-mentor-profile-card-component
+- Live Site URL: https://joy21fs.github.io/front-end-mentor-profile-card-component/
 
 
 ### Built with
